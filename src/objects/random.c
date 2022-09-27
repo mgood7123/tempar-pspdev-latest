@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <psptypes.h>
+#include <psprtc.h>
 #include "common.h"
 
-int random(int min, int max) {
+int randomT(int min, int max) {
 	u64 tick;
 	sceRtcGetCurrentTick(&tick);
 
@@ -11,10 +13,10 @@ int random(int min, int max) {
 }
 
 void random_str(char *str, int minlen, int maxlen) {
-	int len = random(minlen, maxlen);
+	int len = randomT(minlen, maxlen);
 
 	while(len-- > 0) {
-		*str++ = (char)random(0x61, 0x7A);
+		*str++ = (char)randomT(0x61, 0x7A);
 	}
 
 	*str = 0;

@@ -4,6 +4,8 @@
 #define FILE_BUFFER_LIMIT 8128
 #define FILE_BUFFER_SIZE 8192
 
+#include <pspkerneltypes.h>
+
 typedef struct ReadBuffer {
 	SceUID fd;
 	void *buffer;

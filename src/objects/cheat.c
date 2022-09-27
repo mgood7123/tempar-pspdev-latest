@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <pspthreadman.h>
+#include <psputils.h>
 #include "common.h"
 
 extern Config cfg;

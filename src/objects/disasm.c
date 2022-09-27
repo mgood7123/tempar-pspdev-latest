@@ -13,6 +13,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <pspdebug.h>
 #include "common.h"
 
 extern Colors colors;

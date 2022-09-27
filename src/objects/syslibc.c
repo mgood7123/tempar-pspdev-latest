@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdarg.h>
+#include <ctype.h>
 #include "common.h"
 
 static void snprnt_cb(void* ctx, int ch) {

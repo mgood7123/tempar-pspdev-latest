@@ -3,6 +3,7 @@
 #include <pspinit.h>
 #include <pspctrl.h>
 #include <pspctrl_kernel.h>
+#include <pspdebug.h>
 #include "common.h"
 
 Config cfg;

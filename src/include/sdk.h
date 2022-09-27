@@ -5,6 +5,8 @@
 extern "C" {
 #endif
 
+#include <psptypes.h>
+
 /**
  * Allocates a new cheat entry in the cheat list
  *

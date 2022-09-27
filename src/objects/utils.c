@@ -5,6 +5,7 @@
 #include <pspdisplay_kernel.h>
 #include <string.h>
 #include <psputils.h>
+#include <ctype.h>
 #include "common.h"
 
 u32 *find_export(const char *szMod, const char *szLib, u32 nid) {

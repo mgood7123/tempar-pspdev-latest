@@ -1,8 +1,10 @@
 export RELVER := 1.63
 RELFN := _0163
 
-release: prep psp lite pack clean
-release_pr: prep psppr litepr pack clean
+all: release
+
+release: clean prep psp lite pack
+release_pr: clean prep psppr litepr pack
 
 clean:
 	-rm -f src/*.elf

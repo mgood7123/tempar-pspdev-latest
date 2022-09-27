@@ -32,11 +32,10 @@ BUILD_PRX = 1
 PRX_EXPORTS = exports.exp
 
 USE_KERNEL_LIBC = 1
-USE_KERNEL_LIBS = 1
 
 LIBDIR = libs
-LDFLAGS = -mno-crt0 -nostartfiles
-LIBS = -lpspdebug -lpsppower_driver -lpspreg_driver -lpspge_driver -lpsprtc
+LDFLAGS = -nostartfiles
+LIBS = -lpspdebug -lpsppower_driver -lpspreg_driver -lpspge_driver -lpsprtc -lpspdebug -lpspdisplay_driver -lpspctrl_driver -lpspmodinfo -lpspsdk -lpspkernel
 
 PSPSDK = $(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build.mak

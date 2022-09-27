@@ -7,6 +7,8 @@
 
 #define CHEAT_REAL_ADDRESS 0x10
 
+#include <psptypes.h>
+
 /**
  * Cheat flags.
 */
