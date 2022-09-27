@@ -3462,6 +3462,7 @@ u32 layout_credits() {
 			ret = ctrl;
 		}
 	}
+	return ret;
 }
 
 u32 layout_credits2() {
