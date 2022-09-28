@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
+#include <pspkerneltypes.h> // SceUID
+#include <pspiofilemgr.h> // file io
+#include <pspstdio.h> // kernel std io
 
-#ifdef _DEBUG_
+//#ifdef _DEBUG_
 
 void _log(char *fmt, ...) {
 	va_list list;
@@ -28,4 +32,4 @@ void _log_psplink(char *data) {
     sceIoWrite(fd, data, strlen(data));
 }
 
-#endif
+//#endif
